@@ -4,7 +4,7 @@
 
 ---
 
-🚩 This lesson is not included in the Youtube course video or playlist.
+🚩 This lesson is from the Youtube course video from Dave Gray.
 
 🚀 Chapter 8 completes the modification of the Blog Project from the course to a full-integration of RTK Query:
 
