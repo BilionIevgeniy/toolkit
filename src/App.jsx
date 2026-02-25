@@ -2,15 +2,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment } from "./store/slices/api/apiSlice";
 
 function App() {
-  const { count } = useSelector(({ apiReducer }) => apiReducer);
+  const count = useSelector(({ apiReducer: { count } }) => count);
   const dispatch = useDispatch();
+  console.log(count);
 
   return (
     <div>
       <p>{count}</p>
       <button
         onClick={() => {
-          dispatch(increment());
+          dispatch(increment(2));
         }}
       >
         Increment

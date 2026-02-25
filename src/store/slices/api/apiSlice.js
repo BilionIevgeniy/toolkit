@@ -6,7 +6,8 @@ export const apiSlice = createSlice({
     count: 0,
   },
   reducers: {
-    increment: (state) => {
+    increment: (state, { payload }) => {
+      console.log("payload", payload);
       state.count += 1;
     },
     decrement: (state) => {
